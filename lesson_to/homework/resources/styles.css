@@ -1,34 +1,57 @@
 body {
     font-family: "Apple SD Gothic Neo", serif;
     padding: 0 12px;
-    color: white;
+    color: black;
     margin: 0;
     min-height: 100%;
-    /*background: #0367A6;*/
-    background: black;
-    /*background-image: url('resources/images/pexels-pixabay-207529.jpg');*/
-    /*background-position: center center;*/
-    /*background-attachment: fixed;*/
-    /*background-size:  cover;*/
-    /*background-image: url('resources/images/rideshare_feature.jpg');*/
+    background: floralwhite;
 }
 
-table {
-  table-layout: fixed; /* Forces columns to follow defined widths */
-  width: 100%;        /* Table must have a defined width for fixed to work */
+ol li {
+    font-variant-numeric: proportional-nums;
+    list-style-type: Persian;
 }
 
-td {
-  width: 150px;       /* Set fixed width for columns */
-  overflow: hidden;   /* Optional: hides text that exceeds the width */
-  word-wrap: break-word; /* Optional: forces long words to wrap */
+table.languages {
+    border: 1px solid black;
+    table-layout: fixed; /* Forces columns to follow defined widths */
+    width: 50%; /* Table must have a defined width for fixed to work */
 }
 
-th {
+table.languages td,
+table.languages th {
+    border: 1px solid black;
+      padding: 5px 2px;
+}
+
+table.languages tr:nth-child(even) {
+  background: #D0E4F5;
+}
+
+table.languages thead {
+    color: white;
     text-align: left;
+    background: cornflowerblue;
+    border-bottom: 5px solid #FFFFFF;
 }
+
+image.shabani_photo {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/*td {*/
+/*  width: 150px;       !* Set fixed width for columns *!*/
+/*  overflow: hidden;   !* Optional: hides text that exceeds the width *!*/
+/*  word-wrap: break-word; !* Optional: forces long words to wrap *!*/
+/*}*/
+
+/*th {*/
+/*    text-align: left;*/
+/*}*/
 
 #language-header {
-    text-align: center;
-    color: yellow;
+    text-align: left;
+    color: black;
+
 }
