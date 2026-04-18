@@ -1,0 +1,34 @@
+body {
+    font-family: "Apple SD Gothic Neo", serif;
+    padding: 0 12px;
+    color: white;
+    margin: 0;
+    min-height: 100%;
+    /*background: #0367A6;*/
+    background: black;
+    /*background-image: url('resources/images/pexels-pixabay-207529.jpg');*/
+    /*background-position: center center;*/
+    /*background-attachment: fixed;*/
+    /*background-size:  cover;*/
+    /*background-image: url('resources/images/rideshare_feature.jpg');*/
+}
+
+table {
+  table-layout: fixed; /* Forces columns to follow defined widths */
+  width: 100%;        /* Table must have a defined width for fixed to work */
+}
+
+td {
+  width: 150px;       /* Set fixed width for columns */
+  overflow: hidden;   /* Optional: hides text that exceeds the width */
+  word-wrap: break-word; /* Optional: forces long words to wrap */
+}
+
+th {
+    text-align: left;
+}
+
+#language-header {
+    text-align: center;
+    color: yellow;
+}
