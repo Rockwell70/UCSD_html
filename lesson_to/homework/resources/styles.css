@@ -14,8 +14,8 @@ ol li {
 
 table.languages {
     border: 1px solid black;
-    table-layout: fixed; /* Forces columns to follow defined widths */
-    width: 50%; /* Table must have a defined width for fixed to work */
+    table-layout: fixed;
+    width: 50%;
 }
 
 table.languages td,
@@ -40,18 +40,12 @@ image.shabani_photo {
     margin-top: 5px;
 }
 
-/*td {*/
-/*  width: 150px;       !* Set fixed width for columns *!*/
-/*  overflow: hidden;   !* Optional: hides text that exceeds the width *!*/
-/*  word-wrap: break-word; !* Optional: forces long words to wrap *!*/
-/*}*/
-
-/*th {*/
-/*    text-align: left;*/
-/*}*/
-
 #language-header {
     text-align: left;
     color: black;
 
+}
+
+#island_landscape {
+    padding-top: 10px;
 }
