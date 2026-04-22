@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shabani's Wood-Fired Pizza</title>
+    <title>Shabani's Neopalitan Pizza</title>
+    <style>
+        select {
+            width: 200px;
+            margin-bottom: 2em;
+        }
+    </style>
 </head>
 <body>
 
+
 <nav>
-    <div class="logo">Gourmet Delight</div>
+    <div class="logo">Shabani's Neopalitan Pizza</div>
     <div class="nav-links">
-        <a href="#home">Home</a>
         <a href="#menu">Menu</a>
-        <a href="#order">order</a>
+        <a href="#order">Order</a>
     </div>
 </nav>
 
@@ -19,26 +25,70 @@
 <div class="tabs">
 
     <ul class="tabs-nav" role="tablist">
+        <li role="presentation">
+            <a id="tab-antipasti" class="btn btn-tabs active" href="#antipasti" role="tab" aria-controls="antipasti"
+               aria-label="Antipasti" aria-selected="true" data-order="1" tabindex="-1">Antipasti</a>
+        </li>
 
         <li role="presentation">
             <a id="tab-pizze" class="btn btn-tabs" href="#pizze" role="tab" aria-controls="pizze" aria-label="Pizze"
                aria-selected="false" data-order="2" tabindex="-1">Pizze</a>
         </li>
 
-        <li role="presentation">
-            <a id="tab-antipasti" class="btn btn-tabs active" href="#antipasti" role="tab" aria-controls="antipasti"
-               aria-label="Antipasti" aria-selected="true" data-order="4" tabindex="-1">Antipasti</a>
-        </li>
+
 
         <li role="presentation">
             <a id="tab-dolci" class="btn btn-tabs" href="#dolci" role="tab" aria-controls="dolci" aria-label="Dolci"
-               aria-selected="false" data-order="7" tabindex="-1">Dolci</a>
+               aria-selected="false" data-order="3" tabindex="-1">Dolci</a>
         </li>
 
     </ul>
 
     <div class="tabs-content">
+        <section id="antipasti" class="tabs-panel tabs-panel--active tabs-panel--show" role="tabpanel"
+                         aria-labelledby="tab-antipasti" aria-selected="true">
+                    <div class="menu-description container-sm">
+                        <h2>Antipasti</h2>
 
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <section class="menu-section">
+                                    <ul>
+                                        <li class="menu-item ">
+                                            <div class="menu-item__heading">
+                                                <p class="menu-item__heading menu-item__heading--name">Marinated Castelvetrano
+                                                    Olives</p>
+                                            </div>
+                                            <p class="menu-item__details--description">Citrus zest, extra virgin olive oil</p>
+                                            <p class="menu-item-price">$7</p>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <div class="menu-item__heading">
+                                                <p class="menu-item__heading menu-item__heading--name">Focaccia</p>
+                                            </div>
+                                            <p class="menu-item__details--description">House-made freshly baked flat bread with
+                                                fresh herbs, olive oil, Trapini sea salt.</p>
+                                            <p class="menu-item-price">$8</p>
+                                        </li>
+                                        <li class="menu-item ">
+                                            <div class="menu-item__heading">
+                                                <p class="menu-item__heading menu-item__heading--name">Misto Salumi</p>
+                                            </div>
+                                            <p class="menu-item__details--description">Seasonal charcuterie selection,
+                                                castelvetrano olives, grana padano</p>
+                                            <p class="menu-item-price">$10</p>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
         <section id="pizze" class="tabs-panel" role="tabpanel" aria-labelledby="tab-pizze" aria-selected="false">
             <div class="container-sm">
                 <section class="menu-section">
@@ -77,50 +127,7 @@
                 </section>
             </div>
         </section>
-        <section id="antipasti" class="tabs-panel tabs-panel--active tabs-panel--show" role="tabpanel"
-                 aria-labelledby="tab-antipasti" aria-selected="true">
-            <div class="menu-description container-sm">
-                <h2>Antipasti</h2>
 
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <section class="menu-section">
-                            <ul>
-                                <li class="menu-item ">
-                                    <div class="menu-item__heading">
-                                        <p class="menu-item__heading menu-item__heading--name">Marinated Castelvetrano
-                                            Olives</p>
-                                    </div>
-                                    <p class="menu-item__details--description">Citrus zest, extra virgin olive oil</p>
-                                    <p class="menu-item-price">$7</p>
-                                </li>
-                                <li class="menu-item ">
-                                    <div class="menu-item__heading">
-                                        <p class="menu-item__heading menu-item__heading--name">Focaccia</p>
-                                    </div>
-                                    <p class="menu-item__details--description">House-made freshly baked flat bread with
-                                        fresh herbs, olive oil, Trapini sea salt.</p>
-                                    <p class="menu-item-price">$8</p>
-                                </li>
-                                <li class="menu-item ">
-                                    <div class="menu-item__heading">
-                                        <p class="menu-item__heading menu-item__heading--name">Misto Salumi</p>
-                                    </div>
-                                    <p class="menu-item__details--description">Seasonal charcuterie selection,
-                                        castelvetrano olives, grana padano</p>
-                                    <p class="menu-item-price">$10</p>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div class="col-md-6">
-
-                    </div>
-                </div>
-            </div>
-        </section>
         <section id="dolci" class="tabs-panel" role="tabpanel" aria-labelledby="tab-dolci" aria-selected="false">
             <div class="container-sm">
                 <section class="menu-section">
@@ -191,14 +198,13 @@
     <form class="contact-form">
         <input type="text" placeholder="Your Name" required>
         <input type="phone" placeholder="Your mobile number" required>
-        <textarea rows="4" placeholder="Message or Special Requests"></textarea>
-        <button type="submit" class="btn" style="border:none; cursor:pointer;">Send Message</button>
+        <button type="submit" class="btn" style="border:none; cursor:pointer;">Submit Order</button>
     </form>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2026 Shabani's Wood-Fired Pizza. All rights reserved.</p>
+    <p>&copy; 2026 Shabani's Neopalitan Pizza. All rights reserved.</p>
 </footer>
 
 </body>
