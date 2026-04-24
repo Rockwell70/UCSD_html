@@ -2,22 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/styles.css">
     <title>Shabani's Neopalitan Pizza</title>
-    <style>
-        select {
-            width: 200px;
-            margin-bottom: 2em;
-        }
-        form.contact-form input{
-            width: 200px;
-            margin-bottom: 1em;
-            display: flex;
-            align-items: center;
-        }
-        .input-secure{
-            -webkit-text-security: circle;
-        }
-    </style>
 </head>
 <body>
 
@@ -25,7 +11,6 @@
 <nav>
     <div class="logo">Shabani's Neopalitan Pizza</div>
     <div class="nav-links">
-        <a href="#menu">Menu</a>
         <a href="#order">Order</a>
     </div>
 </nav>
@@ -45,7 +30,6 @@
         </li>
 
 
-
         <li role="presentation">
             <a id="tab-dolci" class="btn btn-tabs" href="#dolci" role="tab" data-order="3"
                tabindex="-1">Dolci</a>
@@ -55,49 +39,41 @@
 
     <div class="tabs-content">
         <section id="antipasti" class="tabs-panel tabs-panel--active tabs-panel--show" role="tabpanel">
-                    <div class="menu-description container-sm">
-                        <h2>Antipasti</h2>
+            <div class="menu-description container-sm">
+                <h2>Antipasti</h2>
 
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <section class="menu-section">
-                                    <ul>
-                                        <li class="menu-item ">
-                                            <div class="menu-item__heading">
-                                                <p class="menu-item__heading menu-item__heading--name">Marinated Castelvetrano
-                                                    Olives</p>
-                                            </div>
-                                            <p class="menu-item__details--description">Citrus zest, extra virgin olive oil</p>
-                                            <p class="menu-item-price">$7</p>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <div class="menu-item__heading">
-                                                <p class="menu-item__heading menu-item__heading--name">Focaccia</p>
-                                            </div>
-                                            <p class="menu-item__details--description">House-made freshly baked flat bread with
-                                                fresh herbs, olive oil, Trapini sea salt.</p>
-                                            <p class="menu-item-price">$8</p>
-                                        </li>
-                                        <li class="menu-item ">
-                                            <div class="menu-item__heading">
-                                                <p class="menu-item__heading menu-item__heading--name">Misto Salumi</p>
-                                            </div>
-                                            <p class="menu-item__details--description">Seasonal charcuterie selection,
-                                                castelvetrano olives, grana padano</p>
-                                            <p class="menu-item-price">$10</p>
-                                        </li>
-                                    </ul>
-                                </section>
-                            </div>
-                            <div class="col-md-6">
-
-                            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu-section">
+                            <ul>
+                                <li class="menu-item ">
+                                    <div class="menu-item__heading">
+                                        <p class="menu-item__heading menu-item__heading--name">Focaccia</p>
+                                    </div>
+                                    <p class="menu-item__details--description">House-made freshly baked flat bread with
+                                        fresh herbs, olive oil, Trapini sea salt.</p>
+                                    <p class="menu-item-price">$8</p>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="menu-item__heading">
+                                        <p class="menu-item__heading menu-item__heading--name">Misto Salumi</p>
+                                    </div>
+                                    <p class="menu-item__details--description">Seasonal charcuterie selection,
+                                        castelvetrano olives, grana padano</p>
+                                    <p class="menu-item-price">$10</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-        <section id="pizze" class="tabs-panel" role="tabpanel">
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="pizze" class="tabs-panel" role="tabpanel">
             <div class="container-sm">
                 <section class="menu-section">
                     <div class="menu-section__header">
@@ -134,9 +110,9 @@
                     </ul>
                 </section>
             </div>
-        </section>
+        </div>
 
-        <section id="dolci" class="tabs-panel" role="tabpanel">
+        <div id="dolci" class="tabs-panel" role="tabpanel">
             <div class="container-sm">
                 <section class="menu-section">
                     <div class="menu-section__header">
@@ -155,63 +131,54 @@
                                 <p class="menu-item__heading menu-item__heading--name">Gelato</p>
                             </div>
                             <p class="menu-item__details--description">Your choice of scratch made gelato: chocolate,
-                                vanilla or raspberry sorbetto.</p>
+                                vanilla.</p>
                             <p class="menu-item-price">$8</p>
-                        </li>
-                        <li class="menu-item ">
-                            <div class="menu-item__heading">
-                                <p class="menu-item__heading menu-item__heading--name">Mezza Luna Nutella</p>
-                            </div>
-                            <p class="menu-item__details--description">Chocolate hazelnut calzone</p>
-                            <p class="menu-item-price">$8</p>
-
                         </li>
                     </ul>
                 </section>
             </div>
-        </section>
+        </div>
     </div>
 </div>
 
-<!-- Contact Section -->
+<!-- Ordering Section -->
 <section id="order" class="ordering-section">
     <h2>Ordering</h2>
     <form class="contact-form">
         <p>Select an Antipasto</p>
         <select name="antipasti">
-            <option value="blank"></option>
-            <option value="olives">Marinated Castelvetrano Olives</option>
-            <option value="focaccia">Focaccia</option>
-            <option value="salumi">Misto Salumi</option>
+            <option value="blank" label=" "></option>
+            <option value="focaccia" label="Focaccia">Focaccia</option>
+            <option value="salumi" label="Misto Salumi">Misto Salumi</option>
         </select>
         <p>Select a Pizza</p>
         <select name="pizzas">
-            <option value="blank"></option>
-            <option value="marinara">Marinara</option>
-            <option value="margherita">Margherita</option>
-            <option value="salsiccia">Salsiccia</option>
+            <option value="blank" label=" "></option>
+            <option value="marinara" label="Marinara"></option>
+            <option value="margherita" label="Margherita"></option>
+            <option value="salsiccia" label="Salsiccia"></option>
         </select>
         <p>Select Dolce</p>
         <select name="dolci">
-            <option value="blank"></option>
-            <option value="tiramisu">Tiramisu</option>
-            <option value="gelato">Gelato</option>
-            <option value="mezzaluna">Mezza Luna Nutella</option>
+            <option value="blank" label=" "></option>
+            <option value="tiramisu" label="Tiramisu">Tiramisu</option>
+            <option value="gelato" label="Gelato">Gelato</option>
         </select>
     </form>
 </section>
 
-<section id="contact" class="contact-section">
+<!-- Contact Section -->
+<div id="contact" class="contact-section">
     <p>Please enter your contact and payment information below.</p>
     <form class="contact-form">
         <input type="text" placeholder="Your Name" required>
         <input type="number" placeholder="Mobile Number" required>
-        <input class="input-secure" type="number"  placeholder="Credit Card Number" required>
-        <input type="date" placeholder="Credit Card Exp Date" required>
+        <input class="input-secure" type="number" placeholder="Credit Card Number" required>
+        <input type="date" required>
         <input class="input-secure" type="number" placeholder="Credit Card Security Code" required>
-        <button type="submit" class="btn" style="border:none; cursor:pointer;">Submit Order</button>
+        <button type="submit" class="btn">Submit Order</button>
     </form>
-</section>
+</div>
 
 <!-- Footer -->
 <footer>
