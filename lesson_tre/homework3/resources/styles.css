@@ -3,18 +3,29 @@ select {
     margin-bottom: 2em;
 }
 
+
 form.contact-form input {
     width: 200px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     display: flex;
     align-items: center;
 }
-
 .input-secure {
     -webkit-text-security: circle;
 }
 
-.btn {
-    border: none;
-    cursor: pointer;
+
+.btn-order {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.4s ease;
+    width: 200px;
+    height: 25px;
 }
+
+.btn-order:hover {
+    background-color: black;
+    color: white;
+}
+
