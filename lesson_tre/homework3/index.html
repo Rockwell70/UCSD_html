@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="site.webmanifest"/>
     <link rel="stylesheet" href="resources/styles.css">
     <title>Shabani's Neopalitan Pizza</title>
 </head>
@@ -172,20 +177,19 @@
     <p>Please enter your contact and payment information below.</p>
     <form class="contact-form">
         <label for="name">Your Name</label>
-        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="text" name="name" id="name" required>
 
         <label for="mobile-num">Mobile Number</label>
-        <input type="number" name="mobile-num" id="mobile-num" placeholder="Mobile Number" required>
+        <input type="number" name="mobile-num" id="mobile-num" required>
 
         <label for="cc-num">Credit Card Number</label>
-        <input class="input-secure" type="number" name="cc-num" id="cc-num" placeholder="Credit Card Number" required>
+        <input class="input-secure" type="number" name="cc-num" id="cc-num" required>
 
         <label for="cc-ex-date">Credit Card Expiration</label>
         <input type="date" name="cc-ex-date" id="cc-ex-date" required>
 
         <label for="cc-sec-code" title="Found on back of card">Credit Card Security Code</label>
-        <input class="input-secure" type="number" name="cc-sec-code" id="cc-sec-code"
-               placeholder="Credit Card Security Code" required>
+        <input class="input-secure" type="number" name="cc-sec-code" id="cc-sec-code" required>
         <button type="submit" class="btn-order">Submit Order</button>
     </form>
 </div>

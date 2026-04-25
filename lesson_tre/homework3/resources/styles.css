@@ -28,4 +28,14 @@ form.contact-form input {
     background-color: black;
     color: white;
 }
+/* Remove arrows for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Remove arrows for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
