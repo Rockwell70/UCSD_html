@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="site.webmanifest"/>
+    <link rel="stylesheet" href="resources/main.css">
+    <title>Shabani's Neopalitan Pizza</title>
+</head>
+<body>
+
+
+<nav>
+    <div class="logo">Shabani's Neopalitan Pizza</div>
+    <div class="nav-links">
+        <a href="#order">Order</a>
+    </div>
+</nav>
+
+<!-- Menu Section -->
+<div class="tabs">
+
+    <ul class="tabs-nav" role="tablist">
+        <li role="presentation">
+            <a id="tab-antipasti" class="btn btn-tabs" href="#antipasti" role="tab" data-order="1"
+               tabindex="-1">Antipasti</a>
+        </li>
+
+        <li role="presentation">
+            <a id="tab-pizze" class="btn btn-tabs" href="#pizze" role="tab" data-order="2"
+               tabindex="-1">Pizze</a>
+        </li>
+        <li role="presentation">
+            <a id="tab-dolci" class="btn btn-tabs" href="#dolci" role="tab" data-order="3"
+               tabindex="-1">Dolci</a>
+        </li>
+    </ul>
+
+    <div class="tabs-content">
+        <section id="antipasti" class="tabs-panel tabs-panel--active tabs-panel--show" role="tabpanel">
+            <div class="menu-description container-sm">
+                <h2>Antipasti</h2>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu-section">
+                            <ul>
+                                <li class="menu-item ">
+                                    <div class="menu-item__heading">
+                                        <p class="menu-item__heading menu-item__heading--name">Focaccia</p>
+                                    </div>
+                                    <p class="menu-item__details--description">House-made freshly baked flat bread with
+                                        fresh herbs, olive oil, & sea salt.</p>
+                                    <p class="menu-item-price">$8</p>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="menu-item__heading">
+                                        <p class="menu-item__heading menu-item__heading--name">Misto Salumi</p>
+                                    </div>
+                                    <p class="menu-item__details--description">Seasonal charcuterie selection,
+                                        Italian olives, grana padano</p>
+                                    <p class="menu-item-price">$10</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="pizze" class="tabs-panel" role="tabpanel">
+            <div class="container-sm">
+                <section class="menu-section">
+                    <div class="menu-section__header">
+                        <h2>Pizze</h2>
+
+                    </div>
+                    <ul>
+                        <li class="menu-item ">
+                            <div class="menu-item__heading">
+                                <p class="menu-item__heading menu-item__heading--name">Marinara</p>
+                            </div>
+                            <p class="menu-item__details--description">Pomodoro, garlic, basil, extra virgin olive
+                                oil</p>
+                            <p class="menu-item-price">$18</p>
+                        </li>
+
+                        <li class="menu-item ">
+                            <div class="menu-item__heading">
+                                <p class="menu-item__heading menu-item__heading--name">Margherita</p>
+                            </div>
+                            <p class="menu-item__details--description">Fresh mozzarella, pomodoro, basil, extra virgin
+                                olive oil, grana padano</p>
+                            <p class="menu-item-price">$18</p>
+                        </li>
+
+                        <li class="menu-item ">
+                            <div class="menu-item__heading">
+                                <p class="menu-item__heading menu-item__heading--name">Salsiccia</p>
+                            </div>
+                            <p class="menu-item__details--description">Italian sausage, fresh mozzarella, pomodoro,
+                                basil, grana padano</p>
+                            <p class="menu-item-price">$22</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div id="dolci" class="tabs-panel" role="tabpanel">
+            <div class="container-sm">
+                <section class="menu-section">
+                    <div class="menu-section__header">
+                        <h2>Dolci</h2>
+                    </div>
+                    <ul>
+                        <li class="menu-item ">
+                            <div class="menu-item__heading">
+                                <p class="menu-item__heading menu-item__heading--name">Tree Log</p>
+                            </div>
+                            <p class="menu-item__details--description">White cake wrapped in marzipan and dipped in
+                            dark chocolate at each end</p>
+                            <p class="menu-item-price">$8</p>
+                        </li>
+                        <li class="menu-item ">
+                            <div class="menu-item__heading">
+                                <p class="menu-item__heading menu-item__heading--name">Gelato</p>
+                            </div>
+                            <p class="menu-item__details--description">Your choice of scratch made gelato: chocolate,
+                                vanilla.</p>
+                            <p class="menu-item-price">$8</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ordering Section -->
+<section id="order" class="ordering-section">
+    <h2>Ordering</h2>
+    <form class="contact-form">
+        <p>Select an Antipasto</p>
+        <select name="antipasti">
+            <option value="blank" label=" "></option>
+            <option value="focaccia" label="Focaccia">Focaccia</option>
+            <option value="salumi" label="Misto Salumi">Misto Salumi</option>
+        </select>
+        <p>Select a Pizza</p>
+        <select name="pizzas">
+            <option value="blank" label=" "></option>
+            <option value="marinara" label="Marinara"></option>
+            <option value="margherita" label="Margherita"></option>
+            <option value="salsiccia" label="Salsiccia"></option>
+        </select>
+        <p>Select Dolce</p>
+        <select name="dolci">
+            <option value="blank" label=" "></option>
+            <option value="tiramisu" label="Tiramisu">Tiramisu</option>
+            <option value="gelato" label="Gelato">Gelato</option>
+        </select>
+    </form>
+</section>
+
+<!-- Contact Section -->
+
+<div id="contact" class="contact-section">
+    <h3>Payment</h3>
+    <p>Please enter your contact and payment information below.</p>
+    <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="mobile-num">Mobile Number</label>
+        <input type="number" name="mobile-num" id="mobile-num" required>
+
+        <label for="cc-num">Credit Card Number</label>
+        <input class="input-secure" type="number" name="cc-num" id="cc-num" required>
+
+        <label for="cc-ex-date">Credit Card Expiration</label>
+        <input type="date" name="cc-ex-date" id="cc-ex-date" required>
+
+        <label for="cc-sec-code" title="Found on back of card">Credit Card Security Code</label>
+        <input class="input-secure" type="number" name="cc-sec-code" id="cc-sec-code" required>
+        <button type="submit" class="btn-order">Submit Order</button>
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Shabani's Neopalitan Pizza. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

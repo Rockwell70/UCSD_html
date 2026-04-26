@@ -1,0 +1,131 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+    overflow-x: hidden !important;
+    padding: 1em;
+
+}
+select {
+    width: 200px;
+    margin-bottom: 2em;
+}
+
+.tabs-nav {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1010px;
+    margin-bottom: 2rem;
+}
+
+.tabs-nav .btn {
+    margin-top: 0;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+.content .btn {
+    margin: 1rem .9375rem;
+}
+.btn {
+    border-radius: 0px;
+    padding: 0.5rem 1rem;
+}
+
+.btn-tabs {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+.btn {
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+    font-size: .9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-width: 1px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+
+.menu-section>ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu-item {
+    padding-bottom: 8px;
+}
+
+.menu-item__heading {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.menu-item-price {
+    border-bottom-style: dotted;
+    border-width: 4px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+form.contact-form input {
+    width: 200px;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+.input-secure {
+    -webkit-text-security: circle;
+}
+
+
+.btn-order {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.4s ease;
+    width: 200px;
+    height: 25px;
+}
+
+.btn-order:hover {
+    background-color: black;
+    color: white;
+}
+/* Remove arrows for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
