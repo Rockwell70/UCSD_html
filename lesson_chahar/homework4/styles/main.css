@@ -15,63 +15,39 @@ body {
     padding: 1em;
 
 }
-select {
-    width: 200px;
-    margin-bottom: 2em;
+
+.header-logo-button {
+    display: flex;
+    align-items: center;
 }
 
-.tabs-nav {
-    display: block;
-    list-style: none;
-    margin-left: auto;
+.logo {
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 1010px;
-    margin-bottom: 2rem;
 }
 
-.tabs-nav .btn {
-    margin-top: 0;
-    margin-left: .25rem;
-    margin-right: .25rem;
-}
-.content .btn {
-    margin: 1rem .9375rem;
-}
-.btn {
-    border-radius: 0px;
-    padding: 0.5rem 1rem;
-}
-
-.btn-tabs {
-    font-family: "Raleway", sans-serif;
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-}
-.btn {
-    -webkit-transition: all .2s ease-in-out 0s;
-    transition: all .2s ease-in-out 0s;
-    font-size: .9rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-width: 1px;
-}
-.btn {
-    display: inline-block;
-    font-weight: 600;
+#button-order-link {
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 25px;
+    transition: all 0.4s ease;
+    padding: 4px 10px;
     text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 2px;
+    border: 1px solid #555555;
+
+}
+
+#button-order-link:hover {
+    background-color: white;
+    color: black;
+}
+#pizza_image {
+    width: 800px;
+    padding-top: 10px;
 }
 
 .menu-section>ul {
