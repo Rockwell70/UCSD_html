@@ -24,14 +24,17 @@ body {
 .logo {
     margin-right: auto;
 }
-
+.menu-select {
+    display: block;
+    padding-top: 1em;
+}
 #button-order-link {
     background-color: black;
     color: white;
     width: 80px;
     height: 25px;
     transition: all 0.4s ease;
-    padding: 4px 10px;
+    padding: .5em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -40,11 +43,12 @@ body {
     border: 1px solid #555555;
 
 }
-
 #button-order-link:hover {
-    background-color: white;
-    color: black;
-}
+        background-color: white;
+        color: black;
+    }
+
+
 #pizza_image {
     width: 800px;
     padding-top: 10px;
@@ -71,12 +75,22 @@ body {
     margin-bottom: 0.5rem;
 }
 
-form.contact-form input {
+form.order-form {
+    padding-bottom: 20px;
+}
+
+form.order-form input {
     width: 200px;
     margin-bottom: 2em;
     display: flex;
     align-items: center;
 }
+
+form.order-form select {
+    width: 200px;
+    height: 30px;
+}
+
 .input-secure {
     -webkit-text-security: circle;
 }
