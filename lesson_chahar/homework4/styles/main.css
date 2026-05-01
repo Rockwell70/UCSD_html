@@ -91,6 +91,21 @@ form.order-form select {
     height: 30px;
 }
 
+form.payment-form {
+    padding-bottom: 30px;
+}
+
+form.payment-form input {
+    width: 200px;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+form.payment-form select {
+    width: 200px;
+    height: 30px;
+}
 .input-secure {
     -webkit-text-security: circle;
 }
