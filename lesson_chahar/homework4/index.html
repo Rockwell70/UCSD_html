@@ -176,7 +176,7 @@
         <input type="date" name="cc-ex-date" id="cc-ex-date" required>
 
         <label for="cc-sec-code" title="Found on back of card">Credit Card Security Code</label>
-        <input class="input-secure" type="number" name="cc-sec-code" id="cc-sec-code" required>
+        <input class="input-secure" type="text" name="cc-sec-code" id="cc-sec-code" pattern="[0-9]{1,3}" required>
         <button type="submit" class="btn-order">Submit Order</button>
     </form>
 </section>
@@ -189,3 +189,6 @@
 
 </body>
 </html>
+<!--<input type="number" placeholder="0">-->
+
+<!--                            <button>Add to Cart</button>-->
