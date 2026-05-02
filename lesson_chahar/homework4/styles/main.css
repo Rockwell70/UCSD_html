@@ -18,9 +18,11 @@ body {
 
 }
 .header {
+    align-items: center;
     box-sizing: border-box;
     display: flex;
-    padding-bottom: 2px;
+    justify-content: space-between;
+    padding: 10px 0px;
     position: fixed; top: 0;
 
 }
@@ -28,6 +30,7 @@ body {
 .header-logo {
     align-items: end;
     box-sizing: border-box;
+    height:60px;
     display: flex;
 }
 
@@ -35,9 +38,8 @@ body {
     box-sizing: border-box;
     background: whitesmoke;
     display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    width: 100%;
+    justify-content: end;
+    padding: 10px;
 }
 
 .navigation-buttons>ul>li {
@@ -59,8 +61,8 @@ body {
 }
 
 #pizza_image {
+    padding-top: 75px;
     width: 1000px;
-    padding-top: 10px;
 }
 
 #menu-header {
@@ -73,6 +75,8 @@ body {
 }
 
 .menu-item {
+    border-bottom-style: dotted;
+    border-width: 4px;
     padding-bottom: 8px;
 }
 
@@ -82,10 +86,23 @@ body {
 }
 
 .menu-item-price {
-    border-bottom-style: dotted;
-    border-width: 4px;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.menu-item-quantity {
+    text-align: center;
+    height: 25px;
+    width: 50px;
+
+}
+
+.quantity-input {
+    height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50px;
+
 }
 
 .menu-select {
@@ -116,7 +133,6 @@ form.order-form select {
     transition: all 0.4s ease;
     width: 100px;
     height: 25px;
-    margin-left: 10px;
 }
 
 .btn-add-order:hover {
@@ -124,39 +140,39 @@ form.order-form select {
     color: black;
 }
 
-/*form.payment-form {*/
-/*    padding-bottom: 30px;*/
-/*}*/
+form.payment-form {
+    padding-bottom: 30px;
+}
 
-/*form.payment-form input {*/
-/*    width: 200px;*/
-/*    margin-bottom: 2em;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
+form.payment-form input {
+    width: 200px;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
 
-/*form.payment-form select {*/
-/*    width: 200px;*/
-/*    height: 30px;*/
-/*}*/
-/*.input-secure {*/
-/*    -webkit-text-security: circle;*/
-/*}*/
+form.payment-form select {
+    width: 200px;
+    height: 30px;
+}
+.input-secure {
+    -webkit-text-security: circle;
+}
 
 
-/*.btn-order {*/
-/*    background-color: black;*/
-/*    color: white;*/
-/*    border: 2px solid black;*/
-/*    transition: all 0.4s ease;*/
-/*    width: 200px;*/
-/*    height: 25px;*/
-/*}*/
+.btn-order {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: all 0.4s ease;
+    width: 200px;
+    height: 25px;
+}
 
-/*.btn-order:hover {*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*}*/
+.btn-order:hover {
+    background-color: white;
+    color: black;
+}
 
 /* Remove arrows for Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-outer-spin-button,
