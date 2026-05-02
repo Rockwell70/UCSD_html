@@ -15,19 +15,19 @@
 
 <!-- Header Section -->
 <header class="header">
-    <img class="header-logo" src="favicon-96x96.png">
-    <section class="navigation-buttons">
+    <img class="header-logo" src="favicon-96x96.png" alt="Shabani's Logo">
+    <div class="navigation-buttons">
         <ul>
             <li><a class="navigation-links" id="menu" href="#antipasti">Menu</a></li>
             <li><a class="navigation-links" id="order-now" href="#order">Order Now</a></li>
         </ul>
 
-    </section>
+    </div>
 </header>
 
-<section>
+<div>
     <img id="pizza_image" src="images/pizza.jpg" alt="Pizza in oven">
-</section>
+</div>
 
 <!-- Menu Section -->
 <h1 id="menu-header">Menu</h1>
@@ -44,14 +44,14 @@
                             <h3 class="menu-item__name">Focaccia</h3>
 
                         </div>
-                        <img class="food-image" src="./images/focaccia.jpg">
+                        <img class="food-image" src="./images/focaccia.jpg" alt="Image of focaccia">
                         <p class="menu-item__details--description">House-made freshly baked flat bread with
                             fresh herbs, olive oil, & sea salt.</p>
 
                         <p class="menu-item-price">$8</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="focaccia-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="focaccia-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
@@ -59,14 +59,14 @@
                     <li class="menu-item ">
                         <div class="menu-item__heading">
                             <h3 class="menu-item__name">Misto Salumi</h3>
-                            <img class="food-image" src="./images/salumi.jpg">
+                            <img class="food-image" src="./images/salumi.jpg" alt="Image of salumi">
                         </div>
                         <p class="menu-item__details--description">Seasonal charcuterie selection,
                             Italian olives, grana padano</p>
                         <p class="menu-item-price">$10</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="salumi-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="salumi-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
@@ -88,14 +88,14 @@
                 <li class="menu-item ">
                     <div class="menu-item__heading">
                         <h3 class="menu-item__name">Marinara</h3>
-                        <img class="food-image" src="./images/marinara.jpg">
+                        <img class="food-image" src="./images/marinara.jpg" alt="Image of marinara pizza">
                     </div>
                     <p class="menu-item__details--description">Pomodoro, garlic, basil, extra virgin olive
                         oil</p>
                     <p class="menu-item-price">$18</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="marinara-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="marinara-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
@@ -104,14 +104,14 @@
                 <li class="menu-item ">
                     <div class="menu-item__heading">
                         <h3 class="menu-item__name">Margherita</h3>
-                        <img class="food-image" src="./images/margherita.jpg">
+                        <img class="food-image" src="./images/margherita.jpg" alt="Image of margherita pizza">
                     </div>
                     <p class="menu-item__details--description">Fresh mozzarella, pomodoro, basil, extra virgin
                         olive oil, grana padano</p>
                     <p class="menu-item-price">$18</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="margherita-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="margherita-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
@@ -120,14 +120,14 @@
                 <li class="menu-item ">
                     <div class="menu-item__heading">
                         <h3 class="menu-item__name">Salsiccia</h3>
-                        <img class="food-image" src="./images/salsiccia.jpg">
+                        <img class="food-image" src="./images/salsiccia.jpg" alt="Image of salsiccia pizza">
                     </div>
                     <p class="menu-item__details--description">Italian sausage, fresh mozzarella, pomodoro,
                         basil, grana padano</p>
                     <p class="menu-item-price">$22</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="salsiccia-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="salsiccia-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
@@ -147,14 +147,14 @@
                 <li class="menu-item ">
                     <div class="menu-item__heading">
                         <h3 class="menu-item__name">Tree Log</h3>
-                        <img class="food-image" src="./images/treelog.jpg">
+                        <img class="food-image" src="./images/treelog.jpg" alt="Image of tree log dessert">
                     </div>
                     <p class="menu-item__details--description">White cake wrapped in marzipan and dipped in
                         dark chocolate at each end</p>
                     <p class="menu-item-price">$8</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="tree-log-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="tree-log-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
@@ -162,13 +162,13 @@
                 <li class="menu-item ">
                     <div class="menu-item__heading">
                         <h3 class="menu-item__name">Panna Cotta</h3>
-                        <img class="food-image" src="./images/pannacotta.jpg">
+                        <img class="food-image" src="./images/pannacotta.jpg" alt="Image of panna cotta dessert">
                     </div>
                     <p class="menu-item__details--description">Deliciously dense cream and vanilla dessert.</p>
                     <p class="menu-item-price">$8</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="gelato-qty" min="1" value="1" pattern="[0-9]*">
+                        <input type="number" class="quantity-input" id="gelato-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
