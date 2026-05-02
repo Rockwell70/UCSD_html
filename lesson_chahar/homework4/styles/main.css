@@ -40,22 +40,28 @@ body {
 }
 
 .navigation-buttons>ul {
-    display: flex;
+    background-color: black;
     list-style: none;
+    overflow: hidden;
+    padding: 0;
 }
 
-.navigation-links {
-    text-decoration: none;
-    background-color: black;
+.navigation-buttons>ul>li {
+    float: left;
+}
+
+.navigation-buttons>ul>li>a {
     color: white;
     display: block;
-    padding: .5em 1em;
-    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
-#logo {
-    height: 60px;
-    padding-bottom: 10px;
+.navigation-buttons>ul>li>a:hover {
+    background-color: white;
+    border-top: 1px black;
+    color: black;
 }
 
 #pizza_image {
