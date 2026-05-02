@@ -5,36 +5,66 @@
 body {
     background-color: #fff;
     color: #000;
+    display: block;
     font-family: "Avenir Next", sans-serif;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 800px;
     overflow-x: hidden !important;
     padding: 1em;
 
 }
 
-.header-logo-button {
-    display: grid;
-    grid-template-columns: 650px 100px;
-    gap: 50px;
+.header {
+    align-items: center;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    box-sizing: border-box;
+    column-gap: 10px;
+    display: flex;
+    grid-template-columns: 650px 100px 100px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+
+}
+
+.header-logo {
+    align-items: end;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.navigation-buttons>ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-links {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: block;
+    padding: .5em 1em;
+    border-radius: 10px;
 }
 
 #logo {
-    height: 80px;
+    height: 60px;
     padding-bottom: 10px;
-}
-
-#order-now {
-    margin-top: 10px;
-    color: darkred;
 }
 
 #pizza_image {
     width: 1000px;
     padding-top: 10px;
+}
+
+#menu-header {
+    margin-bottom: 80px;
 }
 
 .menu-section>ul {
