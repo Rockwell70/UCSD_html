@@ -22,7 +22,6 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
     position: fixed; top: 0;
 
 }
@@ -30,7 +29,7 @@ body {
 .header-logo {
     align-items: end;
     box-sizing: border-box;
-    height:60px;
+    height: 40px;
     display: flex;
 }
 
@@ -45,7 +44,7 @@ body {
 .navigation-buttons>ul>li {
     list-style: none;
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: bold;
 }
 
