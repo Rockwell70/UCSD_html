@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
     <link rel="manifest" href="site.webmanifest"/>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="script.js"></script>
     <title>Shabani's Neopalitan Pizza</title>
 </head>
 <body>
@@ -50,9 +51,9 @@
 
                         <p class="menu-item-price">$8</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
+                        <button class="qty-btn decrement" id="increment-focaccia" onclick="updateValue('focaccia-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="focaccia-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn increment" id="decrement-focaccia" onclick="updateValue('focaccia-qty', 1)">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
                     </li>
@@ -65,9 +66,9 @@
                             Italian olives, grana padano</p>
                         <p class="menu-item-price">$10</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
+                        <button class="qty-btn decrement" onclick="updateValue('salumi-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="salumi-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn increment" onclick="updateValue('salumi-qty', 1)">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
                     </li>
@@ -94,7 +95,7 @@
                         oil</p>
                     <p class="menu-item-price">$18</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
+                        <button class="qty-btn decrement" onclick="updateValue('marinara-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="marinara-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
@@ -110,7 +111,7 @@
                         olive oil, grana padano</p>
                     <p class="menu-item-price">$18</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
+                        <button class="qty-btn decrement" onclick="updateValue('margherita-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="margherita-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
@@ -126,7 +127,7 @@
                         basil, grana padano</p>
                     <p class="menu-item-price">$22</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
+                        <button class="qty-btn decrement" onclick="updateValue('salsiccia-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="salsiccia-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
@@ -153,7 +154,7 @@
                         dark chocolate at each end</p>
                     <p class="menu-item-price">$8</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
+                        <button class="qty-btn decrement" onclick="updateValue('tree-log-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="tree-log-qty" min="1" value="1">
                         <button class="qty-btn increment">+</button>
                     </div>
@@ -167,9 +168,9 @@
                     <p class="menu-item__details--description">Deliciously dense cream and vanilla dessert.</p>
                     <p class="menu-item-price">$8</p>
                     <div class="quantity-selector">
-                        <button class="qty-btn decrement">-</button>
-                        <input type="number" class="quantity-input" id="gelato-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn decrement" onclick="updateValue('panna-cotta-qty', -1)">-</button>
+                        <input type="number" class="panna-cotta-input" id="panna-cotta-qty" min="1" value="1" step="1">
+                        <button class="qty-btn increment" onclick="updateValue('panna-cotta-qty', 1)">+</button>
                     </div>
                     <button type="submit" class="btn-add-order">Add to Order</button>
                 </li>
