@@ -204,3 +204,14 @@ table {
         padding: 5px 2px;
     }
 }
+
+#cart tr > th:nth-child(3),
+#cart tr> td:nth-child(3){
+    color: green;
+    font-weight: bold;
+}
+
+#cart tr > th:nth-child(4),
+#cart tr> td:nth-child(4){
+    display: none;
+}

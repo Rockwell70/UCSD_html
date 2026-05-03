@@ -4,24 +4,34 @@ function grandTotalCost() {
      * @type {HTMLElement}
      */
     let tbody = document.getElementById("cart")
+    let sumItems = 0;
+    let sumCost = 0
     const columnIndex = 2;
     const items = tbody.querySelectorAll(`tr td:nth-child(${columnIndex})`)
-    const prices = tbody.querySelectorAll(`tr td:nth-child(${columnIndex + 1})`)
-    const sumItems = Array.from(items).reduce((acc, cell) => {
+    const prices = tbody.querySelectorAll(`tr td:nth-child(${columnIndex + 2})`)
+    sumItems = Array.from(items).reduce((acc, cell) => {
         return acc + parseFloat(cell.textContent) || 0;
     }, 0);
 
-    const sumCost = Array.from(prices).reduce((acc, cell) => {
+    sumCost = Array.from(prices).reduce((acc, cell) => {
         return acc + parseFloat(cell.textContent) || 0;
     }, 0);
 
     document.getElementById('totalOrderName').innerHTML = '<em>Total Order</em>';
     document.getElementById('totalItems').innerHTML = sumItems;
-    document.getElementById('totalOrder').innerHTML = sumCost;
+
+    // sumCost = sumCost * 1.072
+    let sumCostFormatted = sumCost.toLocaleString('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+    })
+    document.getElementById('totalCost').innerHTML = sumCostFormatted;
 }
 
 
-function addRowToTable(name, quantity, total) {
+function addRowToTable(name, quantity, total, cost) {
     /**
      * This function updates the cart when the item name, number of items
      * selected, and the total cost.
@@ -30,15 +40,22 @@ function addRowToTable(name, quantity, total) {
     let tbody = document.getElementById("cart")
 
 
+
     let row = tbody.insertRow()
     let cell1 = row.insertCell()
     let cell2 = row.insertCell()
     let cell3 = row.insertCell()
+    let cell4 = row.insertCell()
 
     cell1.innerHTML = name
     cell2.innerHTML = quantity
     cell3.innerHTML = total
+    cell4.innerHTML = cost
 
+    document.getElementById('totalItems').innerHTML = 0;
+    document.getElementById('totalCost').innerHTML = 0;
+
+    grandTotalCost()
 
 }
 
@@ -74,8 +91,7 @@ function calclulateItemCost(elementDesc, inputElement, priceElement) {
         maximumFractionDigits: 2,
     })
 
-    addRowToTable(itemName, quantity, costFormatted);
-    grandTotalCost()
+    addRowToTable(itemName, quantity, costFormatted, cost);
 
 }
 
