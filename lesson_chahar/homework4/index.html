@@ -42,35 +42,35 @@
                 <ul>
                     <li class="menu-item ">
                         <div class="menu-item__heading">
-                            <h3 class="menu-item__name">Focaccia</h3>
+                            <h3 class="menu-item__name" id="menu-item__name__focaccia">Focaccia</h3>
 
                         </div>
-                        <img class="food-image" src="./images/focaccia.jpg" alt="Image of focaccia">
+                        <img class="food-image" src="./images/focaccia.jpg" alt="Image of focaccia" title="Image of focaccia">
                         <p class="menu-item__details--description">House-made freshly baked flat bread with
                             fresh herbs, olive oil, & sea salt.</p>
 
-                        <p class="menu-item-price">$8</p>
+                        <p class="menu-item-price" id="price-focaccia">$8</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" id="increment-focaccia" onclick="updateValue('focaccia-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="focaccia-qty" min="1" value="1">
                         <button class="qty-btn increment" id="decrement-focaccia" onclick="updateValue('focaccia-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__focaccia', 'focaccia-qty', 'price-focaccia')">Add to Order</button>
                     </li>
                     <li class="menu-item ">
                         <div class="menu-item__heading">
-                            <h3 class="menu-item__name">Misto Salumi</h3>
-                            <img class="food-image" src="./images/salumi.jpg" alt="Image of salumi">
+                            <h3 class="menu-item__name" id="menu-item__name__salumi">Misto Salumi</h3>
+                            <img class="food-image" src="./images/salumi.jpg" alt="Image of salumi" title="Image of salumi">
                         </div>
                         <p class="menu-item__details--description">Seasonal charcuterie selection,
                             Italian olives, grana padano</p>
-                        <p class="menu-item-price">$10</p>
+                        <p class="menu-item-price" id="price-salumi">$10</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" onclick="updateValue('salumi-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="salumi-qty" min="1" value="1">
                         <button class="qty-btn increment" onclick="updateValue('salumi-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__salumi', 'salumi-qty', 'price-salumi')">Add to Order</button>
                     </li>
                 </ul>
             </div>
@@ -88,50 +88,50 @@
             <ul>
                 <li class="menu-item ">
                     <div class="menu-item__heading">
-                        <h3 class="menu-item__name">Marinara</h3>
-                        <img class="food-image" src="./images/marinara.jpg" alt="Image of marinara pizza">
+                        <h3 class="menu-item__name" id="menu-item__name__marinara">Marinara</h3>
+                        <img class="food-image" src="./images/marinara.jpg" alt="Image of marinara pizza" title="Image of marinara pizza">
                     </div>
                     <p class="menu-item__details--description">Pomodoro, garlic, basil, extra virgin olive
                         oil</p>
-                    <p class="menu-item-price">$18</p>
+                    <p class="menu-item-price" id="price-marinara">$18</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" onclick="updateValue('marinara-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="marinara-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn increment" onclick="updateValue('marinara-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__marinara', 'marinara-qty', 'price-marinara')">Add to Order</button>
                 </li>
 
                 <li class="menu-item ">
                     <div class="menu-item__heading">
-                        <h3 class="menu-item__name">Margherita</h3>
-                        <img class="food-image" src="./images/margherita.jpg" alt="Image of margherita pizza">
+                        <h3 class="menu-item__name" id="menu-item__name__margherita">Margherita</h3>
+                        <img class="food-image" src="./images/margherita.jpg" alt="Image of margherita pizza" title="Image of margherita pizza">
                     </div>
                     <p class="menu-item__details--description">Fresh mozzarella, pomodoro, basil, extra virgin
                         olive oil, grana padano</p>
-                    <p class="menu-item-price">$18</p>
+                    <p class="menu-item-price" id="price-margherita">$18</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" onclick="updateValue('margherita-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="margherita-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn increment" onclick="updateValue('margherita-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__margherita', 'margherita-qty', 'price-margherita')">Add to Order</button>
                 </li>
 
                 <li class="menu-item ">
                     <div class="menu-item__heading">
-                        <h3 class="menu-item__name">Salsiccia</h3>
-                        <img class="food-image" src="./images/salsiccia.jpg" alt="Image of salsiccia pizza">
+                        <h3 class="menu-item__name" id="menu-item__name__salsiccia">Salsiccia</h3>
+                        <img class="food-image" src="./images/salsiccia.jpg" alt="Image of salsiccia pizza" title="Image of salsiccia pizza">
                     </div>
                     <p class="menu-item__details--description">Italian sausage, fresh mozzarella, pomodoro,
                         basil, grana padano</p>
-                    <p class="menu-item-price">$22</p>
+                    <p class="menu-item-price"  id="price-salsiccia">$22</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" onclick="updateValue('salsiccia-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="salsiccia-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn increment" onclick="updateValue('salsiccia-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__salsiccia', 'salsiccia-qty', 'price-salsiccia')">Add to Order</button>
                 </li>
             </ul>
         </section>
@@ -147,32 +147,32 @@
             <ul>
                 <li class="menu-item ">
                     <div class="menu-item__heading">
-                        <h3 class="menu-item__name">Tree Log</h3>
-                        <img class="food-image" src="./images/treelog.jpg" alt="Image of tree log dessert">
+                        <h3 class="menu-item__name" id="menu-item__name__tree-log">Tree Log</h3>
+                        <img class="food-image" src="./images/treelog.jpg" alt="Image of tree log dessert" title="Image of tree log dessert">
                     </div>
                     <p class="menu-item__details--description">White cake wrapped in marzipan and dipped in
                         dark chocolate at each end</p>
-                    <p class="menu-item-price">$8</p>
+                    <p class="menu-item-price" id="price-tree-log">$8</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" onclick="updateValue('tree-log-qty', -1)">-</button>
                         <input type="number" class="quantity-input" id="tree-log-qty" min="1" value="1">
-                        <button class="qty-btn increment">+</button>
+                        <button class="qty-btn increment" onclick="updateValue('tree-log-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__tree-log', 'tree-log-qty', 'price-tree-log')">Add to Order</button>
                 </li>
                 <li class="menu-item ">
                     <div class="menu-item__heading">
-                        <h3 class="menu-item__name">Panna Cotta</h3>
-                        <img class="food-image" src="./images/pannacotta.jpg" alt="Image of panna cotta dessert">
+                        <h3 class="menu-item__name" id="menu-item__name__panna-cotta">Panna Cotta</h3>
+                        <img class="food-image" src="./images/pannacotta.jpg" alt="Image of panna cotta dessert" title="Image of panna cotta dessert">
                     </div>
                     <p class="menu-item__details--description">Deliciously dense cream and vanilla dessert.</p>
-                    <p class="menu-item-price">$8</p>
+                    <p class="menu-item-price" id="price-panna-cotta">$8</p>
                     <div class="quantity-selector">
                         <button class="qty-btn decrement" onclick="updateValue('panna-cotta-qty', -1)">-</button>
-                        <input type="number" class="panna-cotta-input" id="panna-cotta-qty" min="1" value="1" step="1">
+                        <input type="number" class="quantity-input" id="panna-cotta-qty" min="1" value="1" step="1">
                         <button class="qty-btn increment" onclick="updateValue('panna-cotta-qty', 1)">+</button>
                     </div>
-                    <button type="submit" class="btn-add-order">Add to Order</button>
+                    <button type="submit" class="btn-add-order" onclick="calclulateItemCost('menu-item__name__panna-cotta', 'panna-cotta-qty', 'price-panna-cotta')">Add to Order</button>
                 </li>
             </ul>
         </section>
@@ -183,7 +183,25 @@
 <section id="order" class="ordering-section">
     <h2>Order Summary</h2>
     <form class="order-form">
-        <ul class="cart"></ul>
+        <table id="cart">
+        <thead>
+        <tr>
+            <th scope="col"><strong>Item</strong></th>
+            <th scope="col"><strong>Count</strong></th>
+            <th scope="col"><strong>Total Price</strong></th>
+        </tr>
+        </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot id="cartFooter">
+            <tr>
+                <td colspan="1" id="totalOrderName"></td>
+                <td id="totalItems"></td>
+                <td id="totalCost"></td>
+            </tr>
+            </tfoot>
+        </table>
     </form>
 </section>
 
