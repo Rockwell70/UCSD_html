@@ -1,4 +1,8 @@
 function grandTotalCost() {
+    /**
+     * Caclulates the total number of items ordered and total cost of all items ordered.
+     * @type {HTMLElement}
+     */
     let tbody = document.getElementById("cart")
     const columnIndex = 2;
     const items = tbody.querySelectorAll(`tr td:nth-child(${columnIndex})`)
@@ -18,6 +22,11 @@ function grandTotalCost() {
 
 
 function addRowToTable(name, quantity, total) {
+    /**
+     * This function updates the cart when the item name, number of items
+     * selected, and the total cost.
+     * @type {HTMLElement}
+     */
     let tbody = document.getElementById("cart")
 
 
@@ -33,10 +42,11 @@ function addRowToTable(name, quantity, total) {
 
 }
 
-
-
-
 function updateValue(inputElement, change) {
+    /**
+     * This function updates each menu item quantity when the '+' or '-' button is clicked.
+     * @type {HTMLElement}
+     */
     const input = document.getElementById(inputElement)
     let value = parseInt(input.value || 0);
     if (value === 1 && change === -1) {
@@ -48,6 +58,10 @@ function updateValue(inputElement, change) {
 }
 
 function calclulateItemCost(elementDesc, inputElement, priceElement) {
+    /**
+     * Caclulates the cost of each item selected based on quantity and price
+     * @type {string}
+     */
     const itemName = document.getElementById(elementDesc).innerHTML;
     const quantity = document.getElementById(inputElement).value;
     const priceString = document.getElementById(priceElement).innerHTML;
