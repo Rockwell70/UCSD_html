@@ -5,6 +5,7 @@
   --dark:#2b3a46;
   --light:#eef3f8;
   --card:#ffffff;
+    --border-color: lightgrey;
 }
 
 *{ box-sizing:border-box; }
@@ -52,11 +53,10 @@ body{
 .nav a:hover{ background: rgba(255,255,255,.08); }
 
 .card{
-    background: rgba(255, 255, 255, .08);
-    background: linear-gradient(180deg, var(--blue1), var(--blue2));;
-    /*padding: 18px 18px 0;*/
+    /*background: rgba(255, 255, 255, .08);*/
+    background: linear-gradient(180deg, var(--blue1), var(--blue2), var(--light));
     margin: 0 75px;
-    border-radius: 6px;
+    /*border-radius: 6px;*/
 }
 
 .hero {
@@ -65,18 +65,28 @@ body{
     border-radius: 4px;
     box-shadow: inset 0 -12px 0 rgba(0, 0, 0, .08);
     color: #fff;
-    height: 240px;
-    padding: 34px 18px 34px;
+    height: 260px;
+    /*padding: 34px 18px 34px;*/
     text-align: center;
 
 }
 
 .hero h2{
-    border-bottom: solid 0.25px rgba(255,255,255, .25);
-    margin: 0 0 10px;
+    margin: 0 0 20px;
     font-size: clamp(26px, 3vw, 44px);
+    /*padding-bottom: 10px;*/
     text-shadow: 0 2px 10px rgba(0, 0, 0, .25);
 }
+
+.hero h2::after {
+  content: "";
+  display: block;
+  width: 80%; /* Controls the length of the border */
+  margin: 20px auto 20px; /* Centers the border */
+  border-bottom: solid 0.25px rgba(255,255,255, .25); /* The border style */
+
+}
+
 .hero p{
   margin: 0 auto;
   max-width: 640px;
@@ -87,7 +97,7 @@ body{
 .features{
   display: flex;
   justify-content: space-evenly;
-  /*gap: 10px;*/
+  gap: 10px;
   margin: 18px 20px;
 }
 
@@ -99,17 +109,18 @@ body{
     padding: 36px 36px 22px;
     border-radius: 4px;
     color: #fff;
-    box-shadow: 0 10px 18px rgba(0, 0, 0, .18);
+    /*box-shadow: 0 10px 18px rgba(0, 0, 0, .18);*/
 }
 
 .feature .icon{
+
   font-size: 44px;
   line-height:1;
   margin-bottom: 10px;
 }
 
 .icon {
-    color: white;
+    filter: brightness(0) invert(1);
     margin-left: auto;
     margin-right: auto;
 }
@@ -136,7 +147,7 @@ body{
   display: flex;
   flex-direction: row;
   background: #dfe7f1;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   align-items: stretch;
 
 }
@@ -145,7 +156,7 @@ body{
   display: flex;
   flex-direction: column;
   background: #eef3f8;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   padding: 14px;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
 }
@@ -170,10 +181,10 @@ body{
 }
 
 .team-grid {
-    border-top: solid 0.25px lightblue;
+    border-top: solid 0.25px var(--border-color);
     display: flex;
     justify-content: space-evenly;
-    padding-top: 15px;
+    padding-top: 1rem;
 
 }
 
@@ -211,9 +222,9 @@ body{
 }
 
 .form{
-    border-top: solid 0.25px lightblue;
+    border-top: solid 0.25px var(--border-color);
     justify-content: space-evenly;
-    padding-top: 15px;
+    padding-top: 1rem;
 }
 
 input, textarea {
@@ -245,7 +256,6 @@ button:hover{ filter: brightness(1.03); }
   background: rgba(43,58,70,.95);
   color:#e8eef6;
   text-align:center;
-  padding: 16px 10px;
-  /*margin: 18px 0 0;*/
+  padding: 24px 10px;
   border-radius: 0 0 6px 6px;
 }
