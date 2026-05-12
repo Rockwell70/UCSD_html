@@ -91,6 +91,23 @@
             }
         }
 
+        .features {
+            display: flex;
+            background-color: lightgray;
+            justify-content: space-evenly;
+            gap: 10px;
+            margin: 18px 20px;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 170px;
+            padding: 36px 36px 22px;
+            border-radius: 4px;
+        }
+
         
     
         }
@@ -98,6 +115,18 @@
 </head>
 
 <body>
-   
+<section class="features">
+    <article class="feature feature--orange">
+        <h3>Box1</h3>
+    </article>
+
+    <article class="feature feature--green">
+        <h3>Box2</h3>
+    </article>
+
+    <article class="feature feature--purple">
+        <h3>Box3</h3>
+    </article>
+</section>
 </body>
 </html>

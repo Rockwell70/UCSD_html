@@ -1,0 +1,112 @@
+
+:root {
+    --lightbg: lightgray;
+    --darkbg: #4c4c4c;
+}
+
+.top-box {
+    align-content: center;
+    align-items: self-start;
+    background-color: var(--lightbg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    height: 16em;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+
+.wide-top-sub-box {
+    background-color: var(--darkbg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 38rem;
+}
+
+.thin-top-sub-box {
+    background-color: var(--darkbg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 1rem;
+    margin-bottom: 7rem;
+    width: 14rem;
+}
+
+.three-col {
+    display: flex;
+    flex-direction: row;
+    background: var(--lightbg);
+    align-items: stretch;
+    height: 32em;
+    margin-bottom: 1rem;
+}
+
+.three-col-one, .three-col-two, .three-col-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 35%;
+    margin-right: 1rem;
+}
+
+.three-col-one {
+    border-right: 2rem solid white;
+}
+
+.three-col-box {
+    align-content: center;
+    align-self: center;
+    background-color: var(--darkbg);
+    color: white;
+    padding-top: 1rem;
+    padding-right: 18rem;
+    padding-left: 18rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.three-col-box-mid, .three-col-box-right {
+    align-content: center;
+    align-self: center;
+    background-color: var(--darkbg);
+    color: white;
+    height: 14rem;
+    padding-top: 1rem;
+    padding-right: 22rem;
+    padding-left: 22rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bottom-box {
+    align-content: center;
+    align-items: self-start;
+    background-color: var(--lightbg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    height: 16em;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.bottom-box-left,.bottom-box-right {
+    color: var(--lightbg)
+}
+
