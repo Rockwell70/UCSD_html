@@ -10,8 +10,10 @@
 }
 
 body {
-  font-family: "Lucida Sans", sans-serif;
-  font-size: 17px;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 90%;
+	width: 100%;
+	padding: 1em;
 }
 
 .grid-container {
@@ -27,86 +29,53 @@ body {
 }
 
 .header {
-
     grid-area: header;
     background-color: var(--lightbg);
     text-align: center;
     color: black;
-    margin-bottom: 1em;
 }
 
 .header ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    position: relative;
 }
 
 .header li {
-    padding: 8px;
-    margin: 1rem 1rem 7px 1rem;
+    height: 2rem;
+    margin: 1rem 1rem 8rem 1rem;
     background-color: var(--darkbg);
     color: white;
+    flex: 1 1 12.5%;
 }
 
-.top-box {
-    align-content: center;
-    align-items: self-start;
-    background-color: var(--lightbg);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 2em;
-    height: 16em;
-    justify-content: space-between;
-    list-style: none;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 1em;
-    text-align: center;
+.header li.header-box-span-two {
+    flex: 1 1 25%;
+    height: 6rem;
 }
 
-
-.wide-top-sub-box {
-    background-color: var(--darkbg);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 8rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    width: 38rem;
-}
-
-.thin-top-sub-box {
-    background-color: var(--darkbg);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 1rem;
-    margin-bottom: 7rem;
-    width: 14rem;
-}
 
 .menu {
     grid-area: menu;
     background-color: var(--lightbg);
+    /*align-items: center;*/
 }
 
 .menu ul {
-    justify-items: center;
+
+    align-items: center;
     list-style-type: none;
-    margin: 1rem 1rem 7px 1rem;
-    padding-top: 1rem;
+    margin-left: -2rem;
+    margin-right: 1rem;
     padding-bottom: 8rem;
 }
 
 .menu li {
-  padding: 4px;
-  margin-bottom: 7px;
-  background-color: var(--darkbg);
-  color: #ffffff;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: var(--darkbg);
+    color: #ffffff;
 }
 
 .menu li:hover {
@@ -114,29 +83,104 @@ body {
 }
 
 .content {
-  grid-area: main;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    grid-area: main;
+    height: 50vh;
+    background-color: var(--lightbg);
 }
+
 
 .content > div {
-  font-size: 30px;
-  margin-bottom: 7px;
+    height: 94%;
+    width: 94%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-size: 24px;
+    background-color: var(--darkbg);
+    color: white;
+    text-align: center;
 }
 
-.facts {
-  grid-area: facts;
-  border: 1px solid #0099cc;
-  background-color: beige;
-  padding: 10px;
-}
-
-.facts div {
-  margin-bottom: 5px;
-}
-
+/* media queries */
 @media (min-width: 600px) {
-  .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .facts {grid-area: 2 / span 1;}
-  .footer {grid-area: 3 / span 6;}
+    .header {
+        grid-area: 1 / span 6;
+    }
+
+    .menu {
+        grid-area: 2 / span 2;
+    }
+
+    .content {
+        grid-area: 2 / span 4;
+    }
+
+    /*.facts {*/
+    /*    grid-area: 2 / span 2;*/
+    /*}*/
+
+    .footer {
+        grid-area: 3 / span 6;
+    }
+
+    .header {
+        display: block;
+    }
+
+    #mobile_menu {
+        display: none;
+    }
+
+    /* the styles for the navigation menu - operation */
+    .header ul {
+        width: 100%;
+        list-style-type: none;
+        position: relative;
+    }
+
+    .header ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    .header ul ul li {
+        float: none;
+        position: relative;
+    }
+
+    .header ul ul li ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+
+    .header ul li.lastitem ul li ul {
+        position: absolute;
+        left: -100%;
+        top: 0;
+    }
+
+    .header ul li {
+        float: left;
+    }
+
+    .header > ul::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    /*the styles for the navigation menu - formatting */
+    .header ul {
+        margin: 0;
+        padding: 0;
+    }
 }
+
+
