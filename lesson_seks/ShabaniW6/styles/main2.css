@@ -1,0 +1,133 @@
+:root {
+    --lightbg: lightgray;
+    --middlebg: #353E43;
+    --darkbg: #4c4c4c;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 17px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'menu'
+    'main'
+    'facts'
+    'footer';
+  background-color: white;
+  gap: 10px;
+}
+
+.header {
+
+    grid-area: header;
+    background-color: var(--lightbg);
+    text-align: center;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    padding: 8px;
+    margin: 1rem 1rem 7px 1rem;
+    background-color: var(--darkbg);
+    color: white;
+}
+
+.top-box {
+    align-content: center;
+    align-items: self-start;
+    background-color: var(--lightbg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    height: 16em;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+
+.wide-top-sub-box {
+    background-color: var(--darkbg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 38rem;
+}
+
+.thin-top-sub-box {
+    background-color: var(--darkbg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 1rem;
+    margin-bottom: 7rem;
+    width: 14rem;
+}
+
+.menu {
+  grid-area: menu;
+    background-color: var(--lightbg);
+  }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: var(--darkbg);
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: var(--middlebg);
+}
+
+.content {
+  grid-area: main;
+}
+
+.content > div {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.content > p {
+  margin-bottom: 7px;
+}
+
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 2;}
+  .content {grid-area: 2 / span 2;}
+  .facts {grid-area: 2 / span 2;}
+  .footer {grid-area: 3 / span 6;}
+}
