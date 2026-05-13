@@ -90,18 +90,20 @@ body {
 }
 
 .menu {
-  grid-area: menu;
+    grid-area: menu;
     background-color: var(--lightbg);
-  }
+}
 
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    justify-items: center;
+    list-style-type: none;
+    margin: 1rem 1rem 7px 1rem;
+    padding-top: 1rem;
+    padding-bottom: 8rem;
 }
 
 .menu li {
-  padding: 8px;
+  padding: 4px;
   margin-bottom: 7px;
   background-color: var(--darkbg);
   color: #ffffff;
@@ -120,14 +122,21 @@ body {
   margin-bottom: 7px;
 }
 
-.content > p {
-  margin-bottom: 7px;
+.facts {
+  grid-area: facts;
+  border: 1px solid #0099cc;
+  background-color: beige;
+  padding: 10px;
+}
+
+.facts div {
+  margin-bottom: 5px;
 }
 
 @media (min-width: 600px) {
   .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 2;}
-  .content {grid-area: 2 / span 2;}
-  .facts {grid-area: 2 / span 2;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
   .footer {grid-area: 3 / span 6;}
 }
