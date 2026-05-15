@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /*.header {*/
+        /*    height: 2rem;*/
+        /*    margin-bottom: 10px;*/
+        /*}*/
+
+        .header::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /* Added outline to the rows to match the image*/
+        .row {
+            outline: 16px solid white;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 1em;
+        }
+
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+<section class="header">
+    <div class="row">
+        <div class="col-3 menu">
+            <img src="https://placehold.co/300x100?font=roboto"/>
+        </div>
+        <div class="col-1">
+            <img src="https://placehold.co/100x50?font=roboto"/>
+        </div>
+        <div class="col-1">
+            <img src="https://placehold.co/100x50?font=roboto"/>
+        </div>
+        <div class="col-1">
+            <img src="https://placehold.co/100x50?font=roboto"/>
+        </div>
+        <div class="col-1">
+            <img src="https://placehold.co/100x50?font=roboto"/>
+        </div>
+        <div class="col-1">
+            <img src="https://placehold.co/100x50?font=roboto"/>
+        </div>
+        <div class="col-1">
+            <img src="https://placehold.co/100x50?font=roboto"/>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
