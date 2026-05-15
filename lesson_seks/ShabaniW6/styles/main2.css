@@ -9,6 +9,18 @@
   box-sizing: border-box;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 body {
 	font-family: "Avenir Next", sans-serif;
 	font-size: 90%;
@@ -29,6 +41,9 @@ body {
   gap: 10px;
 }
 
+.img {
+    background-color: var(--darkbg);
+}
 .header {
     grid-area: header;
     background-color: var(--lightbg);
@@ -56,10 +71,10 @@ body {
     height: 6rem;
 }
 
-.header:before, .header:after {
-	content: " ";
-	display: table;
-}
+/*.header::before, .header::after {*/
+/*	content: " ";*/
+/*	display: table;*/
+/*}*/
 
 .menu {
     grid-area: menu;
@@ -179,52 +194,13 @@ body {
 
 }
 
-/*@media (min-width: 600px) {*/
-/*    .header {*/
-/*        grid-area: 1 / span 6;*/
-/*    }*/
-/*    .header {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*    }*/
-
-/*    .menu {*/
-/*        grid-area: 2 / span 2;*/
-/*    }*/
-
-/*    .content {*/
-/*        grid-area: 2 / span 4;*/
-/*    }*/
-
-/*    .footer {*/
-/*        width: 25%;*/
-/*    }*/
-
-
-/*    #mobile_menu {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .column {*/
-/*    flex: 1*/
-/*    }*/
-
-/*  .double-column {*/
-/*    flex: 2*/
-/*    }*/
-
-/*    .column {*/
-/*    flex: 1*/
-/*  }*/
-
-/*  .double-column {*/
-/*    flex: 2*/
-/*  }*/
-
-/*}*/
-
-@media (min-width: 768px) {
-  .header {grid-area: 1 / span 6;}
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+  .header {
+      grid-area: 1 / span 6;
+  }
   .menu {grid-area: 2 / span 2;}
   .content {grid-area: 2 / span 4;}
   .footer {grid-area: 3 / span 6;}
