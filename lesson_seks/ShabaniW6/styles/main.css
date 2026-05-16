@@ -160,34 +160,44 @@ img {
 
 .sub-row1 {
     background-color: var(--darkbg);
-    height: 4rem;
+    height: 9rem;
+    justify-self: center;
+    /*margin-top: .75rem;*/
+    /*margin-left: 3rem;*/
     margin-top: .75rem;
-    margin-left: 3rem;
     margin-bottom: .75rem;
+    padding-top: 4rem;
+    text-align: center;
+    width: 33%;
 }
 
 .sub-row2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 2rem;
-    margin-left: 3rem;
+    justify-self: center;
+    /*margin-left: 3rem;*/
     margin-bottom: .75rem;
+    width: 33%;
 }
 
 .filler-item-single {
     height: 4rem;
 }
 
-.filler-item-left {
+.filler-item-left, .filler-item-bottom-left {
     align-content: center;
     background-color: var(--darkbg);
     margin-right: 1rem;
+    text-align: center;
 
 
 }
 
-.filler-item-right {
+.filler-item-right, .filler-item-bottom-right {
+    align-content: center;
     background-color: var(--darkbg);
+    text-align: center;
 
 }
 
@@ -197,20 +207,32 @@ img {
     [class*="col-"] {
         width: 100%;
     }
+    
+    /*.col-3 {*/
+    /*    width:90%;*/
+    /*}*/
 
     .header {
         grid-area: 1 / span 6;
     }
 
     .menu {
+        background-color: white;
         grid-area: 2 / span 2;
         justify-content: center;
         height: 65%;
+        width: 140%;
+        padding-bottom: 1rem;
+    }
+    
+    .menu > ul {
+        padding-bottom: 1rem;
     }
 
     .content {
+        background-color: white;
         grid-area: 3 / span 2;
-        width: 97%;
+        width: 120%;
         height: 90%;
     }
 
@@ -222,15 +244,52 @@ img {
     .content>div {
         padding-top: .5vh;
     }
-
-    .footer {
-        display: none;
+    
+    .sub-row1, .sub-row2 {
+        grid-area: 5 / span 2;
+        margin-left: 0;
+        width: 100%;
+        /*background-color: var(--lightbg);*/
+        background-color: white;
+      }
+    
+    .filler-item-single {
+        background-color: var(--darkbg);
+    }
+    
+    .filler-item-left {
+        grid-area: 6 / span 2;
+        height: 2rem;
+        margin-bottom: .75rem;
+        width: 100%;
     }
 
-    .column2 {
-        grid-column: 1 / -1;
-        grid-area: 5/ span 2;
+    .filler-item-right {
+        background-color: var(--darkbg);
+        grid-area: 7 / span 2;
+        height: 2rem;
+        margin-bottom: .75rem;
+        width: 100%;
+        
+        
     }
+    .filler-item-bottom-left {
+        background-color: var(--darkbg);
+        grid-area: 8 / span 2;
+        height: 2rem;
+        /*margin-top: 3rem;*/
+        margin-bottom: .75rem;
+        width: 100%;
+    }
+
+    .filler-item-bottom-right {
+        grid-area: 9 / span 2;
+        background-color: var(--darkbg);
+        height: 2rem;
+
+    }
+    
+    
 
 
 }
