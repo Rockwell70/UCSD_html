@@ -84,14 +84,12 @@ body {
 }
 
 /*.header::before, .header::after {*/
-/*	content: " ";*/
-/*	display: table;*/
-/*}*/
+
 
 .menu {
-    grid-area: menu;
+    #grid-area: menu;
     background-color: var(--lightbg);
-    /*align-items: center;*/
+    grid-area: 2 / span 2;
 }
 
 .menu ul {
@@ -218,5 +216,19 @@ body {
   .footer {grid-area: 3 / span 6;}
 
 }
+
+@media only screen and (min-width: 1400px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+  .header {
+      grid-area: 1 / span 6;
+  }
+  .menu {grid-area: 2 / span 2;}
+  .content {grid-area: 2 / span 4;}
+  .footer {grid-area: 3 / span 6;}
+}
+
+
 
 

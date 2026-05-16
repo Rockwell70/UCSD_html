@@ -1,12 +1,17 @@
 
 
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
+        :root {
+            --lightbg: lightgray;
+            --middlebg: #353E43;
+            --darkbg: #4c4c4c;
+        }
         img {
             height: auto;
             width: 100%;
@@ -16,26 +21,7 @@
             box-sizing: border-box;
         }
 
-        .row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-
-        }
-
         .row::after {
-            content: "";
-            clear: both;
-            display: block;
-        }
-
-        /*.header {*/
-        /*    height: 2rem;*/
-        /*    margin-bottom: 10px;*/
-        /*}*/
-
-        .header::after {
             content: "";
             clear: both;
             display: block;
@@ -43,12 +29,14 @@
 
         /* Added outline to the rows to match the image*/
         .row {
+            background-color: var(--lightbg);
             outline: 16px solid white;
+
         }
 
         [class*="col-"] {
             float: left;
-            padding: 1em;
+            padding: 15px;
         }
 
 
@@ -102,12 +90,151 @@
             width: 100%;
         }
 
+        .middle-section {
+            display: grid;
+            grid-template-columns: repeat(2,28rem 3rem);
+            margin-bottom: 1rem;
+
+        }
+        .menu::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .menu {
+            background-color: var(--lightbg);
+            grid-area: 2 / span 2;
+            padding-top: 1rem;
+            margin-right: 1rem;
+        }
+
+        .menu ul {
+
+            align-items: center;
+            list-style-type: none;
+            margin-left: -2rem;
+            margin-right: 1rem;
+            padding-bottom: 8rem;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: var(--darkbg);
+            color: #ffffff;
+        }
+
+        .menu li:hover {
+            background-color: var(--middlebg);
+        }
+
+        .content {
+            align-items: center;
+            background-color: var(--lightbg);
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1px;
+            height: 50vh;
+            grid-area: 2 / span 4;
+            padding-top: 1.5rem;
+        }
+
+
+        .content > div {
+            height: 94%;
+            width: 94%;
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-size: 24px;
+            background-color: var(--darkbg);
+            color: white;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: var(--lightbg);
+            color: white;
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 16rem;
+           }
+
+        .sub-row1 {
+            background-color: var(--darkbg);
+            height: 4rem;
+            margin-top: .75rem;
+            margin-left: 3rem;
+            margin-bottom: .75rem;
+        }
+
+        .sub-row2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 2rem;
+            margin-left: 3rem;
+            margin-bottom: .75rem;
+        }
+
+        .filler-item-single {
+            height: 4rem;
+        }
+
+        .filler-item-left {
+            align-content: center;
+            background-color: var(--darkbg);
+            margin-right: 1rem;
+
+
+        }
+
+        .filler-item-right {
+            background-color: var(--darkbg);
+
+        }
+
+
+
         @media only screen and (max-width: 768px) {
 
             /* For mobile phones: */
             [class*="col-"] {
                 width: 100%;
             }
+
+            .header {
+                grid-area: 1 / span 6;
+            }
+
+            .menu {
+                grid-area: 2 / span 2;
+                height: 65%;
+                width: 100%
+            }
+
+            .content {
+                grid-area: 3 / span 2;
+                width: 97%;
+                height: 90%;
+            }
+            .content-box3, .content-box4{
+                grid-area: 4 / span 1;
+                height: 50%;
+            }
+
+            .footer {
+                display: none;
+            }
+
+            .sub-row1 {
+                grid-column: 1 / -1;
+                /*grid-area: 5/ span 2;*/
+            }
+
+
         }
 
         
@@ -116,30 +243,73 @@
 </head>
 
 <body>
-<section class="header">
-    <div class="row">
-        <div class="col-3 menu">
-            <img src="https://placehold.co/300x100?font=roboto"/>
+<!--    <div class="grid-container">-->
+        <section class="header">
+        <div class="row">
+            <div class="col-3 menu">
+                <img src="https://placehold.co/300x100?font=roboto"/>
+            </div>
+            <div class="col-1">
+                <img src="https://placehold.co/100x50?font=roboto"/>
+            </div>
+            <div class="col-1">
+                <img src="https://placehold.co/100x50?font=roboto"/>
+            </div>
+            <div class="col-1">
+                <img src="https://placehold.co/100x50?font=roboto"/>
+            </div>
+            <div class="col-1">
+                <img src="https://placehold.co/100x50?font=roboto"/>
+            </div>
+            <div class="col-1">
+                <img src="https://placehold.co/100x50?font=roboto"/>
+            </div>
+            <div class="col-1">
+                <img src="https://placehold.co/100x50?font=roboto"/>
+            </div>
         </div>
-        <div class="col-1">
-            <img src="https://placehold.co/100x50?font=roboto"/>
-        </div>
-        <div class="col-1">
-            <img src="https://placehold.co/100x50?font=roboto"/>
-        </div>
-        <div class="col-1">
-            <img src="https://placehold.co/100x50?font=roboto"/>
-        </div>
-        <div class="col-1">
-            <img src="https://placehold.co/100x50?font=roboto"/>
-        </div>
-        <div class="col-1">
-            <img src="https://placehold.co/100x50?font=roboto"/>
-        </div>
-        <div class="col-1">
-            <img src="https://placehold.co/100x50?font=roboto"/>
+        </section>
+        <div class="middle-section">
+            <section class="menu">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                    <li>Item 6</li>
+                </ul>
+            </section>
+
+            <section class="content">
+                <div class=content-box>1</div>
+                <div class=content-box2>2</div>
+                <div class=content-box3>3</div>
+                <div class=content-box4>4</div>
+            </section>
         </div>
     </div>
+    <section class="footer">
+        <div class="row">
+            <div class="column1"></div>
+            <div class="column2">
+                <div class="sub-row1">
+                    <div class="double-column">
+                        <div class="filler-item-single">Filler</div>
+                    </div>
+                </div>
+                <div class="sub-row2">
+                        <div class="filler-item-left">Middle</div>
+                        <div class="filler-item-right">Middle</div>
+                </div>
+                <div class="sub-row2">
+                        <div class="filler-item-left">Bottom</div>
+                        <div class="filler-item-right">Bottom</div>
+                 </div>
+            </div>
+
+            <div class="column3"></div>
+        </div>
     </section>
 </body>
 </html>
