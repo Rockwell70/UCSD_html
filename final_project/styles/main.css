@@ -1,0 +1,253 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    overflow-x: hidden !important;
+    padding: 1em;
+    scroll-behavior: smooth;
+
+}
+.header {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; top: 0;
+
+}
+
+.header-logo {
+    align-items: end;
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+}
+
+.navigation-buttons>ul {
+    box-sizing: border-box;
+    background: whitesmoke;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.navigation-buttons>ul>li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navigation-buttons>ul>li>a {
+    color: black;
+    display: block;
+}
+
+.navigation-buttons>ul>li>a:hover {
+    background-color: black;
+    border-top: 1px black;
+    color: white;
+}
+
+#pizza_image {
+    padding-top: 75px;
+    width: 1000px;
+}
+
+#menu-header {
+    margin-bottom: 80px;
+}
+.food-image {
+    padding-top: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+
+
+.menu-section>ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu-item {
+    border-bottom-style: dotted;
+    border-width: 4px;
+    padding-bottom: 8px;
+}
+
+.menu-item__heading {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.menu-item-price {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item-quantity {
+    text-align: center;
+    height: 25px;
+    width: 50px;
+
+}
+
+.quantity-input {
+    height: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50px;
+
+}
+
+.menu-select {
+    display: block;
+    padding-top: 1em;
+}
+
+form.order-form {
+    padding-bottom: 20px;
+}
+
+form.order-form input {
+    width: 200px;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+form.order-form select {
+    width: 200px;
+    height: 30px;
+}
+
+.btn-add-order {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: all 0.4s ease;
+    width: 100px;
+    height: 25px;
+}
+
+.btn-add-order:hover {
+    background-color: white;
+    color: black;
+}
+
+form.payment-form {
+    padding-bottom: 30px;
+}
+
+form.payment-form input {
+    width: 200px;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+}
+
+form.payment-form select {
+    width: 200px;
+    height: 30px;
+}
+.input-secure {
+    -webkit-text-security: circle;
+}
+
+
+.btn-order {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: all 0.4s ease;
+    width: 200px;
+    height: 25px;
+}
+
+.btn-order:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Remove arrows for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+table {
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 50%;
+
+    td {
+        /*border: 1px solid black;*/
+        text-align: center;
+        padding: 5px 2px;
+    }
+}
+
+#cart tr > th:nth-child(3),
+#cart tr> td:nth-child(3){
+    color: green;
+    font-weight: bold;
+}
+
+#cart tr > th:nth-child(4),
+#cart tr> td:nth-child(4){
+    display: none;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75% !important;
+    height: 75% !important;
+}
+
+.payment-accepted {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    ul {
+        list-style: none;
+    }
+    
+}
+
+@media only screen and (max-width: 728px) {
+    #pizza_image {
+        display: none;
+    }
+    
+    body {
+        margin-top: 2em;
+    }
+}
