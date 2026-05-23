@@ -209,33 +209,7 @@
 
 <section id="contact" class="contact-section">
     <h2>Payment</h2>
-    <p>Please enter your contact and payment information below.</p>
-    <form class="payment-form">
-        <label for="name">Your Name</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="mobile-num">Mobile Number</label>
-        <input type="tel" name="mobile-num" id="mobile-num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
-        <label for="cc-num">Credit Card Number</label>
-        <input class="input-secure" type="text" name="cc-num" id="cc-num" pattern="[0-9]{1,16}" required>
-
-        <label for="cc-ex-date">Credit Card Expiration</label>
-        <input type="date" name="cc-ex-date" id="cc-ex-date" required>
-
-        <label for="cc-sec-code" title="Found on back of card">3 Digit Security Code</label>
-        <input class="input-secure" type="text" name="cc-sec-code" id="cc-sec-code" pattern="[0-9]{1,3}" required>
-        <button type="submit" class="btn-order">Submit Order</button>
-    </form>
-</section>
-
-<div class="google-maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.6899708870874!2d-122.3613391!3d47.632157500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490156c75252e07%3A0x7a6ce824ce043699!2sVia%20Tribunali!5e0!3m2!1sen!2sus!4v1779490046775!5m2!1sen!2sus"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-<section class="payment-accepted">
-    <ul class="flex flex-wrap md:justify-center -mb-2 -mx-1">
+    <ul class="payment-accepted">
         <li class="flex-none mb-2 px-1">
             <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24"
                  aria-labelledby="pi-amazon"><title id="pi-amazon">Amazon</title>
@@ -427,7 +401,41 @@
             </svg>
         </li>
     </ul>
+    <p>Please enter your contact and payment information below.</p>
+    <form class="payment-form">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="mobile-num">Mobile Number</label>
+        <input type="tel" name="mobile-num" id="mobile-num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <label for="cc-num">Credit Card Number</label>
+        <input class="input-secure" type="text" name="cc-num" id="cc-num" pattern="[0-9]{1,16}" required>
+
+        <label for="cc-ex-date">Credit Card Expiration</label>
+        <input type="date" name="cc-ex-date" id="cc-ex-date" required>
+
+        <label for="cc-sec-code" title="Found on back of card">3 Digit Security Code</label>
+        <input class="input-secure" type="text" name="cc-sec-code" id="cc-sec-code" pattern="[0-9]{1,3}" required>
+        <button type="submit" class="btn-order">Submit Order</button>
+    </form>
 </section>
+
+<section class="find-us">
+    
+    <div class="contact-info">
+        <h4>Find Shabani's Neopalitan Pizza</h4>
+        <p>317 W Galer St, Seattle, WA 98119</p>
+        <a href="tel:(206) 123-4567" target="_blank" title="tel:(206) 123-4567">(206) 123-4567</a>
+    </div>
+
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.6899708870874!2d-122.3613391!3d47.632157500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490156c75252e07%3A0x7a6ce824ce043699!2sVia%20Tribunali!5e0!3m2!1sen!2sus!4v1779490046775!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer>
     <p>&copy; 2026 Shabani's Neopalitan Pizza. All rights reserved.</p>
