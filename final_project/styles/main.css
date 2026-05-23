@@ -1,5 +1,6 @@
 * {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -34,8 +35,12 @@ body {
 .header-logo {
     align-items: end;
     box-sizing: border-box;
-    height: 40px;
+    height: 41px;
     display: flex;
+    .login {
+        border: white solid 1px;
+        border-radius: 5px;
+    }
 }
 
 .navigation-buttons>ul {
@@ -255,7 +260,6 @@ table {
     width: 65% !important;
     height: 65% !important;
 }
-
 
 
 @media only screen and (max-width: 728px) {
