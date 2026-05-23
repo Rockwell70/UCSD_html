@@ -2,6 +2,10 @@
     box-sizing: inherit;
 }
 
+:root {
+    --footer-color-scheme: rgb(77 96 106);
+}
+
 body {
     background-color: #fff;
     color: #000;
@@ -218,7 +222,7 @@ table {
 
 .google-maps {
     position: relative;
-    padding-bottom: 60%;
+    padding-bottom: 50%;
     height: 0;
     overflow: hidden
 }
@@ -227,16 +231,16 @@ table {
     position: absolute;
     top: 0;
     left: 0;
-    width: 75% !important;
-    height: 75% !important;
+    width: 65% !important;
+    height: 65% !important;
 }
 
 .payment-accepted {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    justify-content: center;
     list-style: none;
     ul {
+        display: flex;
         list-style: none;
     }
     
