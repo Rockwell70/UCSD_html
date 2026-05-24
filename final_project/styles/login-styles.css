@@ -1,5 +1,6 @@
 * {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -252,13 +253,24 @@ table {
   height: 65% !important;
 }
 
+.about-us {
+  padding-bottom: 2rem;
+}
+
 @media only screen and (max-width: 728px) {
-  #pizza_image {
+  .header, #pizza_image  {
     display: none;
   }
   body {
     margin-top: 2em;
   }
+
+  iframe {
+    height: 90%;
+    width: 90%;
+  }
+  
+  
 }
 .account-login {
   max-width: 28rem;
@@ -290,6 +302,17 @@ form.login-form input {
 form.login-form select {
   width: 200px;
   height: 30px;
+}
+
+input {
+  border-radius: 5px;
+  padding-block: 6px;
+  padding-inline: 2px;
+}
+
+.no-account {
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=login-styles.css.map */

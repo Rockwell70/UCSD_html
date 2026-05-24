@@ -95,6 +95,17 @@ function calclulateItemCost(elementDesc, inputElement, priceElement) {
 
 }
 
+function checkPassword() {
+    const pwd1 = document.getElementById('new-password').value;
+    const pwd2 = document.getElementById('new-password-confirm').value;
+
+    if (pwd1 !== pwd2) {
+        alert('Passwords no not match!');
+        return false; //prevents form submission
+    }
+
+    return true; //allows form submission
+}
 
 
 

@@ -69,6 +69,10 @@ body {
     color: white;
 }
 
+.header-mobile {
+    display: none;
+}
+
 #pizza_image {
     padding-top: 75px;
     width: 1000px;
@@ -261,13 +265,55 @@ table {
     height: 65% !important;
 }
 
+.about-us {
+    padding-bottom: 2rem;
+}
 
 @media only screen and (max-width: 728px) {
-    #pizza_image {
+
+    .header, #pizza_image {
         display: none;
     }
     
     body {
         margin-top: 2em;
     }
+
+    .header-mobile {
+        background-color: var(--header-color-scheme-1);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 0;
+        position: fixed;
+        transition: 300ms
+    }
+
+    .navigation-buttons-mobile > ul {
+        padding: 8px;
+    }
+
+    .navigation-buttons-mobile > ul > li {
+        list-style: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: .5rem;
+    }
+
+    .navigation-buttons-mobile > ul > li > a {
+        color: white;
+        display: block;
+    }
+
+    .post-header {
+        padding-top: 18rem;
+    }
+
+    iframe {
+        height: 90%;
+        width: 90%;
+    }
+
+
 }

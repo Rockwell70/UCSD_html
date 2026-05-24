@@ -7,7 +7,7 @@
   margin-top: 25%;
 }
 
-.login-h1 {
+.login-h1{
   text-align: center;
   font-size: 2.5rem;
   line-height: 2.75rem;
@@ -35,4 +35,15 @@ form.login-form select {
 
 .login-button {
   @extend .btn-add-order;
+}
+
+input {
+  border-radius: 5px;
+  padding-block: 6px;
+  padding-inline: 2px;
+}
+
+.no-account {
+  font-size: 1.1rem;
+  text-align: center;
 }
