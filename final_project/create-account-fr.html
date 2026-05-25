@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login-styles.css">
+    <script src="script.js"></script>
+    <title>Account - Shabani's Neopalitan Pizza</title>
+</head>
+<body>
+<header class="header">
+    <img class="header-logo" src="favicon-96x96.png" alt="Shabani's Logo">
+    <div class="navigation-buttons">
+        <ul>
+            <li><a class="navigation-links" id="home" href="index-fr.html#top">Home</a></li>
+            <li><a class="navigation-links" id="menu" href="index-fr.html#antipasti">Menu</a></li>
+            <li><a class="navigation-links" id="order-now" href="index-fr.html#order">Commandez</a></li>
+            <li><a class="login" href="login-fr.html" title="Login" aria-label="Se connecter">Se connecter</a></li>
+            <li><a class="navigation-links" id="contact-us" href="index-fr.html#find-us">Nous Contacter</a></li>
+            <li><a class="navigation-links" id="about-us" href="about-fr.html">À Propos de Nous</a></li>
+            <li><a class="navigation-links" id="english" title="Anglaise" href="create-account.html">EN</a></li>
+        </ul>
+
+    </div>
+</header>
+<header class="header-mobile">
+    <div class="navigation-buttons-mobile">
+        <ul>
+            <li><a class="navigation-links" id="home-mobile" href="index-fr.html#top">Home</a></li>
+            <li><a class="navigation-links" id="menu-mobile" href="index-fr.html#antipasti">Menu</a></li>
+            <li><a class="navigation-links" id="order-now-mobile" href="index-fr.html#order">Commendez</a></li>
+            <li><a class="login" href="login-fr.html" title="Login" aria-label="Se connecter">Se connecter</a></li>
+            <li><a class="navigation-links" id="contact-us-mobile" href="index-fr.html#find-us">Nous Contacter</a></li>
+            <li><a class="navigation-links" id="about-us-mobile" href="about-fr.html">À Propos de Nous</a></li>
+            <li><a class="navigation-links" id="english-mobile" title="Anglaise" href="create-account.html">EN</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<section class="post-header">
+    <section class="account-login">
+        <h1 class="login-h1">Créer un Compte</h1>
+        <form class="login-form" onsubmit="checkPasswordFr()">
+            <label for="account-email"></label>
+            <input type="text" name="account-email" id="account-email" placeholder="Courriel" required>
+            <label for="new-password"></label>
+            <input type="password" name="account-password" id="new-password" placeholder="Mot de Passe" required>
+            <label for="new-password-confirm"></label>
+            <input type="password" name="account-password" id="new-password-confirm"
+                   placeholder="Confirmer Mot de Passe" required>
+            <button type="submit" class="login-button">Créer le Compte</button>
+        </form>
+
+    </section>
+</section>
+</body>
+</html>

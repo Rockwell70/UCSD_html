@@ -107,6 +107,19 @@ function checkPassword() {
     return true; //allows form submission
 }
 
+function checkPasswordFr() {
+    const pwd1 = document.getElementById('new-password').value;
+    const pwd2 = document.getElementById('new-password-confirm').value;
+
+    if (pwd1 !== pwd2) {
+        alert('Les mots de passe ne correspondent pas!');
+        return false; //prevents form submission
+    }
+
+    return true; //allows form submission
+}
+
+
 
 
 
