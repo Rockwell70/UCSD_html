@@ -269,6 +269,9 @@ table {
     padding-bottom: 2rem;
 }
 
+.pizza-video {
+    border: none;
+}
 @media only screen and (max-width: 728px) {
 
     .header, #pizza_image {
