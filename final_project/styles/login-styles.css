@@ -258,7 +258,7 @@ table {
 }
 
 @media only screen and (max-width: 728px) {
-  .header, #pizza_image  {
+  .header, .header-login, #pizza_image  {
     display: none;
   }
   body {
